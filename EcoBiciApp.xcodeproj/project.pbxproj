@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33A6A21922596D7800DDB389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A21822596D7800DDB389 /* AppDelegate.swift */; };
+		33A6A21E22596D7800DDB389 /* ListStation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A21C22596D7800DDB389 /* ListStation.storyboard */; };
+		33A6A22022596D7900DDB389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A21F22596D7900DDB389 /* Assets.xcassets */; };
+		33A6A22322596D7900DDB389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A22122596D7900DDB389 /* LaunchScreen.storyboard */; };
+		33A6A22B2259727500DDB389 /* ListStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A22A2259727500DDB389 /* ListStationViewController.swift */; };
+		33A6A23622597FF900DDB389 /* ListStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A23522597FF900DDB389 /* ListStationView.swift */; };
+		33A6A2382259800700DDB389 /* ListStationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A2372259800700DDB389 /* ListStationPresenter.swift */; };
+		33A6A23A2259801C00DDB389 /* ListStationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A2392259801C00DDB389 /* ListStationInteractor.swift */; };
+		33A6A23D2259A72000DDB389 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A23B2259A72000DDB389 /* StationTableViewCell.swift */; };
+		33A6A23E2259A72000DDB389 /* StationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A23C2259A72000DDB389 /* StationTableViewCell.xib */; };
+		33A6A248225A902E00DDB389 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A245225A902E00DDB389 /* Station.swift */; };
+		33A6A249225A902E00DDB389 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A246225A902E00DDB389 /* Location.swift */; };
+		33A6A24A225A902E00DDB389 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A247225A902E00DDB389 /* Availability.swift */; };
+		33A6A24D225A9ED200DDB389 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A24C225A9ED200DDB389 /* Constants.swift */; };
+		33A6A255225AAEB200DDB389 /* DetailStation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A254225AAEB200DDB389 /* DetailStation.storyboard */; };
+		33A6A257225AAF8D00DDB389 /* DetailStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A256225AAF8D00DDB389 /* DetailStationViewController.swift */; };
+		33A6A259225AAFEF00DDB389 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A258225AAFEF00DDB389 /* Utils.swift */; };
+		33A6A25B225AB7B600DDB389 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A25A225AB7B600DDB389 /* Extensions.swift */; };
+		33A6A25E225AC21B00DDB389 /* NearbyStationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A25C225AC21B00DDB389 /* NearbyStationsTableViewCell.swift */; };
+		33A6A25F225AC21B00DDB389 /* NearbyStationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A25D225AC21B00DDB389 /* NearbyStationsTableViewCell.xib */; };
+		33A6A262225AC43000DDB389 /* MapStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A260225AC43000DDB389 /* MapStationTableViewCell.swift */; };
+		33A6A263225AC43000DDB389 /* MapStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A6A261225AC43000DDB389 /* MapStationTableViewCell.xib */; };
+		33A6A265225AC8A100DDB389 /* StationModelItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A264225AC8A100DDB389 /* StationModelItemType.swift */; };
+		33A6A267225AC90F00DDB389 /* StationModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A266225AC90F00DDB389 /* StationModelItem.swift */; };
+		33A6A269225AE12900DDB389 /* DetailStationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A268225AE12900DDB389 /* DetailStationPresenter.swift */; };
+		33A6A26B225AE16700DDB389 /* DetailStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6A26A225AE16700DDB389 /* DetailStationView.swift */; };
+		A492441DFF46CBA2AE571C96 /* Pods_EcoBiciApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB4DBCE83EB3E6BD01B53DB /* Pods_EcoBiciApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AB4DBCE83EB3E6BD01B53DB /* Pods_EcoBiciApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoBiciApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A6A21522596D7800DDB389 /* EcoBiciApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoBiciApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A6A21822596D7800DDB389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33A6A21D22596D7800DDB389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ListStation.storyboard; sourceTree = "<group>"; };
+		33A6A21F22596D7900DDB389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33A6A22222596D7900DDB389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33A6A22422596D7900DDB389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A6A22A2259727500DDB389 /* ListStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStationViewController.swift; sourceTree = "<group>"; };
+		33A6A23522597FF900DDB389 /* ListStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStationView.swift; sourceTree = "<group>"; };
+		33A6A2372259800700DDB389 /* ListStationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStationPresenter.swift; sourceTree = "<group>"; };
+		33A6A2392259801C00DDB389 /* ListStationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStationInteractor.swift; sourceTree = "<group>"; };
+		33A6A23B2259A72000DDB389 /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		33A6A23C2259A72000DDB389 /* StationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTableViewCell.xib; sourceTree = "<group>"; };
+		33A6A245225A902E00DDB389 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		33A6A246225A902E00DDB389 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		33A6A247225A902E00DDB389 /* Availability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Availability.swift; sourceTree = "<group>"; };
+		33A6A24C225A9ED200DDB389 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33A6A254225AAEB200DDB389 /* DetailStation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailStation.storyboard; sourceTree = "<group>"; };
+		33A6A256225AAF8D00DDB389 /* DetailStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStationViewController.swift; sourceTree = "<group>"; };
+		33A6A258225AAFEF00DDB389 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		33A6A25A225AB7B600DDB389 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		33A6A25C225AC21B00DDB389 /* NearbyStationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyStationsTableViewCell.swift; sourceTree = "<group>"; };
+		33A6A25D225AC21B00DDB389 /* NearbyStationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearbyStationsTableViewCell.xib; sourceTree = "<group>"; };
+		33A6A260225AC43000DDB389 /* MapStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStationTableViewCell.swift; sourceTree = "<group>"; };
+		33A6A261225AC43000DDB389 /* MapStationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapStationTableViewCell.xib; sourceTree = "<group>"; };
+		33A6A264225AC8A100DDB389 /* StationModelItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModelItemType.swift; sourceTree = "<group>"; };
+		33A6A266225AC90F00DDB389 /* StationModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModelItem.swift; sourceTree = "<group>"; };
+		33A6A268225AE12900DDB389 /* DetailStationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStationPresenter.swift; sourceTree = "<group>"; };
+		33A6A26A225AE16700DDB389 /* DetailStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStationView.swift; sourceTree = "<group>"; };
+		54950CC6B3D7FEA888C44949 /* Pods-EcoBiciApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoBiciApp.release.xcconfig"; path = "Target Support Files/Pods-EcoBiciApp/Pods-EcoBiciApp.release.xcconfig"; sourceTree = "<group>"; };
+		E2C8EA21683CD75BA58DF7C5 /* Pods-EcoBiciApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoBiciApp.debug.xcconfig"; path = "Target Support Files/Pods-EcoBiciApp/Pods-EcoBiciApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33A6A21222596D7800DDB389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A492441DFF46CBA2AE571C96 /* Pods_EcoBiciApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33A6A20C22596D7800DDB389 = {
+			isa = PBXGroup;
+			children = (
+				33A6A21722596D7800DDB389 /* EcoBiciApp */,
+				33A6A21622596D7800DDB389 /* Products */,
+				7C6B10E4C4E94B0B57A128E7 /* Pods */,
+				7F81B53F40E59EF8EE80CC56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33A6A21622596D7800DDB389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A21522596D7800DDB389 /* EcoBiciApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33A6A21722596D7800DDB389 /* EcoBiciApp */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A23022597E0400DDB389 /* SupportFiles */,
+				33A6A24B225A9EC300DDB389 /* Helpers */,
+				33A6A22D22597D5D00DDB389 /* Core */,
+				33A6A21822596D7800DDB389 /* AppDelegate.swift */,
+				33A6A22122596D7900DDB389 /* LaunchScreen.storyboard */,
+				33A6A22422596D7900DDB389 /* Info.plist */,
+			);
+			path = EcoBiciApp;
+			sourceTree = "<group>";
+		};
+		33A6A22D22597D5D00DDB389 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A22F22597DC800DDB389 /* StationDetail */,
+				33A6A22E22597D6300DDB389 /* StationList */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		33A6A22E22597D6300DDB389 /* StationList */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A23422597F0100DDB389 /* Model */,
+				33A6A23322597EF900DDB389 /* View */,
+				33A6A23222597EF000DDB389 /* Presenter */,
+				33A6A23122597EE700DDB389 /* Interactor */,
+			);
+			path = StationList;
+			sourceTree = "<group>";
+		};
+		33A6A22F22597DC800DDB389 /* StationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A250225AAE8100DDB389 /* Model */,
+				33A6A24F225AAE7C00DDB389 /* View */,
+				33A6A24E225AAE6B00DDB389 /* Presenter */,
+			);
+			path = StationDetail;
+			sourceTree = "<group>";
+		};
+		33A6A23022597E0400DDB389 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A21F22596D7900DDB389 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		33A6A23122597EE700DDB389 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A2392259801C00DDB389 /* ListStationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		33A6A23222597EF000DDB389 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A2372259800700DDB389 /* ListStationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		33A6A23322597EF900DDB389 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A21C22596D7800DDB389 /* ListStation.storyboard */,
+				33A6A23522597FF900DDB389 /* ListStationView.swift */,
+				33A6A22A2259727500DDB389 /* ListStationViewController.swift */,
+				33A6A23B2259A72000DDB389 /* StationTableViewCell.swift */,
+				33A6A23C2259A72000DDB389 /* StationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33A6A23422597F0100DDB389 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A247225A902E00DDB389 /* Availability.swift */,
+				33A6A246225A902E00DDB389 /* Location.swift */,
+				33A6A245225A902E00DDB389 /* Station.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33A6A24B225A9EC300DDB389 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A24C225A9ED200DDB389 /* Constants.swift */,
+				33A6A258225AAFEF00DDB389 /* Utils.swift */,
+				33A6A25A225AB7B600DDB389 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		33A6A24E225AAE6B00DDB389 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A268225AE12900DDB389 /* DetailStationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		33A6A24F225AAE7C00DDB389 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A254225AAEB200DDB389 /* DetailStation.storyboard */,
+				33A6A26A225AE16700DDB389 /* DetailStationView.swift */,
+				33A6A256225AAF8D00DDB389 /* DetailStationViewController.swift */,
+				33A6A25C225AC21B00DDB389 /* NearbyStationsTableViewCell.swift */,
+				33A6A25D225AC21B00DDB389 /* NearbyStationsTableViewCell.xib */,
+				33A6A260225AC43000DDB389 /* MapStationTableViewCell.swift */,
+				33A6A261225AC43000DDB389 /* MapStationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33A6A250225AAE8100DDB389 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33A6A264225AC8A100DDB389 /* StationModelItemType.swift */,
+				33A6A266225AC90F00DDB389 /* StationModelItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C6B10E4C4E94B0B57A128E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2C8EA21683CD75BA58DF7C5 /* Pods-EcoBiciApp.debug.xcconfig */,
+				54950CC6B3D7FEA888C44949 /* Pods-EcoBiciApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F81B53F40E59EF8EE80CC56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB4DBCE83EB3E6BD01B53DB /* Pods_EcoBiciApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33A6A21422596D7800DDB389 /* EcoBiciApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A6A22722596D7900DDB389 /* Build configuration list for PBXNativeTarget "EcoBiciApp" */;
+			buildPhases = (
+				5E1A3572F98F351A24EFB883 /* [CP] Check Pods Manifest.lock */,
+				33A6A21122596D7800DDB389 /* Sources */,
+				33A6A21222596D7800DDB389 /* Frameworks */,
+				33A6A21322596D7800DDB389 /* Resources */,
+				90C9704A8166537ADC479867 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcoBiciApp;
+			productName = EcoBiciApp;
+			productReference = 33A6A21522596D7800DDB389 /* EcoBiciApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33A6A20D22596D7800DDB389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Héctor Bautista";
+				TargetAttributes = {
+					33A6A21422596D7800DDB389 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 33A6A21022596D7800DDB389 /* Build configuration list for PBXProject "EcoBiciApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33A6A20C22596D7800DDB389;
+			productRefGroup = 33A6A21622596D7800DDB389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33A6A21422596D7800DDB389 /* EcoBiciApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33A6A21322596D7800DDB389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A6A22322596D7900DDB389 /* LaunchScreen.storyboard in Resources */,
+				33A6A22022596D7900DDB389 /* Assets.xcassets in Resources */,
+				33A6A255225AAEB200DDB389 /* DetailStation.storyboard in Resources */,
+				33A6A23E2259A72000DDB389 /* StationTableViewCell.xib in Resources */,
+				33A6A263225AC43000DDB389 /* MapStationTableViewCell.xib in Resources */,
+				33A6A21E22596D7800DDB389 /* ListStation.storyboard in Resources */,
+				33A6A25F225AC21B00DDB389 /* NearbyStationsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E1A3572F98F351A24EFB883 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoBiciApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C9704A8166537ADC479867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoBiciApp/Pods-EcoBiciApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoBiciApp/Pods-EcoBiciApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33A6A21122596D7800DDB389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A6A21922596D7800DDB389 /* AppDelegate.swift in Sources */,
+				33A6A23A2259801C00DDB389 /* ListStationInteractor.swift in Sources */,
+				33A6A249225A902E00DDB389 /* Location.swift in Sources */,
+				33A6A24A225A902E00DDB389 /* Availability.swift in Sources */,
+				33A6A269225AE12900DDB389 /* DetailStationPresenter.swift in Sources */,
+				33A6A23D2259A72000DDB389 /* StationTableViewCell.swift in Sources */,
+				33A6A24D225A9ED200DDB389 /* Constants.swift in Sources */,
+				33A6A26B225AE16700DDB389 /* DetailStationView.swift in Sources */,
+				33A6A267225AC90F00DDB389 /* StationModelItem.swift in Sources */,
+				33A6A22B2259727500DDB389 /* ListStationViewController.swift in Sources */,
+				33A6A23622597FF900DDB389 /* ListStationView.swift in Sources */,
+				33A6A25B225AB7B600DDB389 /* Extensions.swift in Sources */,
+				33A6A265225AC8A100DDB389 /* StationModelItemType.swift in Sources */,
+				33A6A257225AAF8D00DDB389 /* DetailStationViewController.swift in Sources */,
+				33A6A2382259800700DDB389 /* ListStationPresenter.swift in Sources */,
+				33A6A262225AC43000DDB389 /* MapStationTableViewCell.swift in Sources */,
+				33A6A25E225AC21B00DDB389 /* NearbyStationsTableViewCell.swift in Sources */,
+				33A6A248225A902E00DDB389 /* Station.swift in Sources */,
+				33A6A259225AAFEF00DDB389 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33A6A21C22596D7800DDB389 /* ListStation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33A6A21D22596D7800DDB389 /* Base */,
+			);
+			name = ListStation.storyboard;
+			sourceTree = "<group>";
+		};
+		33A6A22122596D7900DDB389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33A6A22222596D7900DDB389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33A6A22522596D7900DDB389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33A6A22622596D7900DDB389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33A6A22822596D7900DDB389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C8EA21683CD75BA58DF7C5 /* Pods-EcoBiciApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoBiciApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.EcoBiciApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		33A6A22922596D7900DDB389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54950CC6B3D7FEA888C44949 /* Pods-EcoBiciApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoBiciApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.EcoBiciApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33A6A21022596D7800DDB389 /* Build configuration list for PBXProject "EcoBiciApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A6A22522596D7900DDB389 /* Debug */,
+				33A6A22622596D7900DDB389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A6A22722596D7900DDB389 /* Build configuration list for PBXNativeTarget "EcoBiciApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A6A22822596D7900DDB389 /* Debug */,
+				33A6A22922596D7900DDB389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33A6A20D22596D7800DDB389 /* Project object */;
+}
